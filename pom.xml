@@ -13,6 +13,7 @@
 		<hibernate.version>4.3.1.Final</hibernate.version>
 		<postgresql.version>9.1-901.jdbc4</postgresql.version>
 		<java.validation.version>1.1.0.Final</java.validation.version>
+		<hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
 	</properties>
 
 	<dependencies>
@@ -31,9 +32,21 @@
 			<artifactId>spring-orm</artifactId>
 			<version>${spring.version}</version>
 		</dependency>	
+		
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate-validator.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
 		<dependency>
